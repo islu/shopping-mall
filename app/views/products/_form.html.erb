@@ -1,0 +1,16 @@
+
+<%= form_for(product) do |f| %>
+	<%= f.label :title, "商品名稱" %>
+	<%= f.text_field :title %> </br>
+	
+	<%= f.label :description, "說明" %>
+	<%= f.text_area :description %> </br>
+	
+	<%= f.label :price, "售價" %>
+	<%= f.text_field :price %> </br>
+	
+	<%= f.submit "送出", class: "nes-btn is-primary" %>
+<% end %>
+
+<br/>
+<%= link_to "回商品列表", products_path, class: "nes-btn" %>
